@@ -1,0 +1,108 @@
+body{
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+}
+
+.heading{
+    color: rgb(193, 191, 191);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 80px;
+}
+
+.main {
+    position: relative;
+}
+
+.keypad{
+    height: 500px;
+    width: 550px;
+    background-color: hsl(223, 31%, 20%);
+    /* border-radius: 10%; */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 0px;
+    position: relative;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+.key{
+    padding: 10px 40px;
+}
+
+.keypad-rows{
+    margin: 30px auto 40px;
+}
+
+.keypad-container{
+    margin: 20px auto;
+    position: absolute;
+}
+
+.Reset, .Equal {
+    padding: 10px 90px;
+}
+.Reset{
+    margin-left: 9px;
+    margin-right: 10px;
+}
+
+.Reset, .Equal, .Delete{
+    color: hsl(0, 0, 100%);
+}
+
+.Seven, .Eight, .Nine, .Four, .Five, .Six, .Three, .Two, .One, .Multiply, .Subtract, .Add, .Dot, .Zero, .Divide{
+    color: hsl(221, 14%, 31%);
+}
+
+.display {
+    height: 100px;
+    width: 550px;
+    background-color: hsl(223, 31%, 20%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 00px;
+    border-bottom-right-radius: 40px;
+    position: absolute;
+    top: 60px;
+    left: 400px;
+}
+
+@media (max-width: 600px){
+    .display{
+        left: 40px;
+        height: 50px;
+        width: 300px;
+    }
+    .key{
+        padding: 5px 10px;
+        border: 0;
+    }
+    .keypad{
+        height: 330px;
+        width: 300px;
+        left: 40px;
+        top: 150px;
+        padding: 5px 20px;
+    }
+    .keypad-rows{
+        padding-bottom: 60px;
+    }
+    .keypad-container{
+        height: 200px;
+        width: 300px;
+        left: 1px;
+        padding: 0;
+    }
+    .keypad-rows{
+        height: 50px;
+        width: 300px;
+        margin: 0;
+    }
+    .Reset, .Equal {
+        padding: 5px 35px;
+    }
+}
